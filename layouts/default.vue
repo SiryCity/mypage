@@ -12,6 +12,9 @@ export default {
   components:{
     MenuBar
   },
+  mounted(){
+    this.$store.commit['main/setStatic100vh']
+  }
 }
 </script>
 
@@ -35,7 +38,8 @@ html
   margin 0
 body
   margin 0
-
+:root
+  --static100vh 100vh
 #root
   width 100%
   display flex

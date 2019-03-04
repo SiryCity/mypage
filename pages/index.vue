@@ -1,19 +1,23 @@
 <template lang="pug">
   div.main
-    card-area: my-profile
-    div.news(:class='[$store.getters["main/isSP"]? "news--SP": "news--PC"]'): my-news
+    div
+      works-cards(:card='$store.getters["works/profile"][0]')
+    div.news(:class='[$store.getters["main/isSP"]? "news--SP": "news--PC"]')
+      news-cards(
+        v-for='(card, i) in $store.getters["news/news"]'
+        :card='card'
+        :key='`news${i}`'
+      )
 </template>
 
 <script>
-import CardArea from '~/components/CardArea.vue'
-import MyProfile from '~/components/MyProfile.md.vue'
-import MyNews from '~/components/MyNews.md.vue'
+import WorksCards from '~/components/WorksCards.vue'
+import NewsCards from '~/components/NewsCards.vue'
 
 export default {
   components: {
-    CardArea,
-    MyProfile,
-    MyNews
+    WorksCards,
+    NewsCards
   },
 }
 </script>
@@ -21,24 +25,26 @@ export default {
 <style lang="stylus" scoped>
 .main
   width 100%
-  height 100vh
-  margin-top 128px
+  height calc(var(--static100vh, 100vh) - 20px)
   display flex
   flex-wrap wrap
   justify-content center
   align-items center
+  align-content center
 .news
   width calc(100% - 32px)
   max-width calc(360px - 32px)
   margin 16px
   word-wrap break-word
+  overflow scroll
+  box-sizing border-box
+  border-top 2px solid #999
+  border-bottom 2px solid #999
 
 .news--SP
-  height auto
-  overflow visible
+  height calc(var(--static100vh, 100vh) - 20px - 360px - 32px - 90px)
 .news--PC
   height 328px
-  overflow scroll
 </style>
 
 
