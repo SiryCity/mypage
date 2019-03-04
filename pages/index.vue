@@ -21,8 +21,8 @@ export default {
 <style lang="stylus" scoped>
 .main
   width 100%
-  //height calc(var(--static100vh, 100vh) + 1px)
   height 100vh
+  margin-top 128px
   display flex
   flex-wrap wrap
   justify-content center
@@ -30,13 +30,14 @@ export default {
 .news
   width calc(100% - 32px)
   max-width calc(360px - 32px)
-  height 328px
   margin 16px
   word-wrap break-word
 
 .news--SP
+  height auto
   overflow visible
 .news--PC
+  height 328px
   overflow scroll
 </style>
 

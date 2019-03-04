@@ -1,8 +1,9 @@
 <template lang="pug">
-  div#root(:style="styles")
+  div#root
     div#root__wrapper
       nuxt
     menu-bar
+    footer#footer &copy; 2019
 </template>
 
 <script>
@@ -11,16 +12,6 @@ export default {
   components:{
     MenuBar
   },
-  mounted(){
-    this.$store.commit('main/setStatic100vh')
-  },
-  data(){
-    return {
-      styles: {
-        color: this.$nuxt.$route.name === 'index' ? 'unset' : 'unset',
-      }
-    }
-  }
 }
 </script>
 
@@ -44,8 +35,7 @@ html
   margin 0
 body
   margin 0
-:root
-  --static100vh 100vh
+
 #root
   width 100%
   display flex
@@ -58,5 +48,11 @@ body
   max-width 720px
   overflow scroll
 
+#footer
+  width 100%
+  height 20px
+  color #eee
+  background-color #333
+  text-align center
 </style>
 
