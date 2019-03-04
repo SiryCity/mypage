@@ -20,9 +20,9 @@
   pointer-events none
 
 .links
-  width 60px
   height 28px
-  fonr-size 20px
+  font-size 20px
+  font-weight bold 
   padding 4px
   color #111
   text-decoration none
@@ -30,10 +30,11 @@
   transition-duration .2s
   transition-property margin-right
   pointer-events auto
+  margin-right 10px
 
 .links:hover
-  margin-right 7px
+  margin-right 20px
 
 .links--active
-  margin-right 7px
+  margin-right 20px
 </style>

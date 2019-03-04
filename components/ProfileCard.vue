@@ -1,8 +1,9 @@
 <template lang="pug">
   div.card
     img.card__img(:src='card.src')
-    h2 {{card.title}}
     div {{card.job}}
+    h1 {{card.name}}
+    div {{card.ruby}}
     div(v-if='card.texts' v-for='text in card.texts') {{text}}
 </template>
 

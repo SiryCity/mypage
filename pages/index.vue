@@ -1,7 +1,6 @@
 <template lang="pug">
   div.main
-    div
-      works-cards(:card='$store.getters["works/profile"][0]')
+    profile-card(:card='$store.getters["profile/profile"]')
     div.news(:class='[$store.getters["main/isSP"]? "news--SP": "news--PC"]')
       news-cards(
         v-for='(card, i) in $store.getters["news/news"]'
@@ -11,12 +10,12 @@
 </template>
 
 <script>
-import WorksCards from '~/components/WorksCards.vue'
+import ProfileCard from '~/components/ProfileCard.vue'
 import NewsCards from '~/components/NewsCards.vue'
 
 export default {
   components: {
-    WorksCards,
+    ProfileCard,
     NewsCards
   },
 }
@@ -38,8 +37,8 @@ export default {
   word-wrap break-word
   overflow scroll
   box-sizing border-box
-  border-top 2px solid #999
-  border-bottom 2px solid #999
+  border-top 1px solid #999
+  border-bottom 1px solid #999
 
 .news--SP
   height calc(var(--static100vh, 100vh) - 20px - 360px - 32px - 90px)
