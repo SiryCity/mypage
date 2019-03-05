@@ -1,6 +1,6 @@
 <template lang="pug">
-  div
-    div {{card.date}}
+  div.news-card
+    time {{card.date}}
     div {{card.text}}
     hr
 </template>
@@ -11,6 +11,14 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
+.news-card > time
+  font-weight bold
+  display inline-block
+  margin 5px 0 3px
+.news-card > hr
+  margin 0
+.news-card > div
+  margin-bottom 10px
 </style>
 
