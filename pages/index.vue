@@ -1,6 +1,6 @@
 <template lang="pug">
   div.main
-    profile-card(:card='$store.getters["profile/profile"]')
+    profile-card
     div.news(:class='[$store.getters["main/isSP"]? "news--SP": "news--PC"]')
       news-cards(
         v-for='(card, i) in $store.getters["news/news"]'
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import ProfileCard from '~/components/ProfileCard.vue'
 import NewsCards from '~/components/NewsCards.vue'
+import ProfileCard from '~/components/ProfileCard.vue'
 
 export default {
   components: {
-    ProfileCard,
-    NewsCards
+    NewsCards,
+    ProfileCard
   },
 }
 </script>

@@ -3,7 +3,7 @@
     div#root__wrapper
       nuxt
     menu-bar
-    footer#footer &copy; 2019
+    footer#footer &copy; 2019 DAIDO Taro
 </template>
 
 <script>
@@ -55,8 +55,8 @@ body
 #footer
   width 100%
   height 20px
-  color #eee
-  background-color #333
   text-align center
+  font-weight bold
+  color #666
 </style>
 
