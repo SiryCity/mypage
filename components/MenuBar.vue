@@ -19,12 +19,13 @@
   margin auto
   pointer-events none
 .links
-  height 20px
-  line-height 20px
-  font-size 20px
-  font-weight bold 
+  height 30px
+  line-height 30px
+  font-size 22px
+  font-weight bold
   padding 4px
-  color #666
+  margin-bottom 2px
+  color #333
   text-decoration none
   text-align center
   transition-duration .2s

@@ -1,13 +1,12 @@
 <template lang="pug">
   div.card
-    img.card__img(:src='card.src')
+    img(:src='card.src')
     h2 {{card.title}}
-    div {{card.job}}
-    div(v-if='card.texts' v-for='text in card.texts') {{text}}
+    div {{card.org}}
+    div {{card.text}}
 </template>
 
 <script>
-
 export default {
   props:['card'],
 }

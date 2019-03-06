@@ -1,19 +1,12 @@
-import icon from '~/assets/icon.svg'
-
 export const getters = {
-  profile: () =>
+  works: () =>
     [
       {
-        src: icon,
-        job: 'Web Enginner',
-        name: '大同太郎',
-        ruby: 'DAIDO Taro',
-        texts: [
-          '# JavaScript',
-          '# Python',
-          '# HTML',
-          '# CSS',
-        ],
-      }
+        src: null,
+        title: null,
+        url: null,
+        org: null,
+        text: null,
+      },
     ]
 }

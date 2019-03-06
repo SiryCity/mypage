@@ -3,7 +3,11 @@
 </template>
 
 <script>
+import WorksCards from '~/components/WorksCards.vue'
 export default {
+  components: {
+    WorksCards
+  }
 }
 </script>
 
