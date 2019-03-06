@@ -3,14 +3,17 @@
     div.profile-card__top
       h2 Web Engineer
       h1 大同 太郎
-      h3 Taroo DAIDOOOO
+      h3 DAIDOOOO Taroo
     div.profile-card__bottom
-      h4 JavaScript
-      h4 Python
-      h5 HTML
-      h5 CSS
+      div.profile-card__bottom__side
+        a.anchor(href='#')
+        a.anchor(href='#')
+      div.profile-card__bottom__side
+        h4 JavaScript
+        h4 Python
+        h5 HTML
+        h5 CSS
 </template>
-
 
 <style lang="stylus" scoped>
 .profile-card
@@ -28,32 +31,40 @@
   display flex
   flex-direction column
   justify-content center
+
 .profile-card__bottom
   width 100%
   height 50%
   display flex
   flex-direction column
-  justify-content flex-end
-  align-items flex-end
+  justify-content space-between
 
 .profile-card__top > h1
   font-size 48px
-  margin 0 0 0 -4px
+  margin 0
   font-weight normal
 .profile-card__top > h2
   font-size 17px
   margin 7px 0 0 8px
 .profile-card__top > h3
   font-size 16px
-  margin 7px 0 0 -4px
+  margin 7px 0 0 0
 
-.profile-card__bottom > h4
-.profile-card__bottom > h5
+.profile-card__bottom__side
+  display flex
+  flex-direction column
+  align-items flex-end
+
+.profile-card__bottom__side > h4
+.profile-card__bottom__side > h5
   color #666
   font-size 16px
   margin 1px
 
-.langs
-  color white
+.anchor
+  width 28px
+  height 28px
+  margin 2px 2px 0
+  background-color gray 
 </style>
 
