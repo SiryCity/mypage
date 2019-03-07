@@ -8,7 +8,7 @@
       div.profile-area__bottom__side
         a.anchor(href='#'): img(:src='link')
         a.anchor(href='#'): img(:src='twitter')
-        a.anchor(href='#'): img(:src='github')
+        a.anchor(href='https://github.com/SiryCity'): img(:src='github')
       div.profile-area__bottom__side
         h4 JavaScript
         h4 Python
@@ -58,14 +58,14 @@ export default {
 
 .profile-area__top > h1
   font-size 48px
-  margin 4px 0 0 0
+  margin 13px 0 0 0
   font-weight normal
 .profile-area__top > h2
   font-size 17px
-  margin 11px 0 0 8px
+  margin 20px 0 0 8px
 .profile-area__top > h3
   font-size 16px
-  margin 11px 0 0 0
+  margin 20px 0 0 0
 
 .profile-area__bottom__side
   display flex
@@ -77,12 +77,12 @@ export default {
 .profile-area__bottom__side > h5
   color #999
   font-size 16px
-  margin 1px
+  margin 1px 2px
 
 .anchor
   width 28px
   height 28px
-  margin 2px 2px 0
+  margin 2px
 
 .anchor > img
   width 28px
