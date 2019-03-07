@@ -2,15 +2,15 @@
   div#root
     div#root__wrapper
       nuxt
-    menu-bar
+    navigation-area
     footer#footer &copy; 2019 DAIDO Taro
 </template>
 
 <script>
-import MenuBar from '~/components/MenuBar.vue'
+import NavigationArea from '~/components/NavigationArea.vue'
 export default {
   components:{
-    MenuBar
+    NavigationArea
   },
   mounted(){
     this.$store.commit['main/setStatic100vh']
