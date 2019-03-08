@@ -42,11 +42,13 @@ export default {
   text-decoration none
 
 .works__bottom > h2
+  height 28px
+  line-height 28px
   font-size 20px
   margin 3px 0 0
 .works__bottom > h3
   font-size 16px
-  margin -1px 0 8px 0
+  margin 2px 0 8px 0
 
 .anchor
   width 28px

@@ -22,7 +22,7 @@ export default {
   min-height calc(100vh - 20px)
   display flex
   flex-wrap wrap
-  justify-content center
+  justify-content space-between
   align-items center
   align-content flex-start
 </style>

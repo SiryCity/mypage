@@ -5,11 +5,11 @@ export const getters = {
     [
       {
         src: shibata279,
-        title: '柴田アクティブストリート',
+        title: 'nagoya.js',
         url: 'https://shibataactivestreet.com/',
-        org: '名古屋市南区',
-        join: 2017,
-        text: '簡単な解説簡単な解説簡単な解説簡単な解説簡単な解説簡単な解説簡単な解説',
+        org: '個人制作',
+        join: 2019,
+        text: '大それた名前の技術ブログ.',
       },
       {
         src: shibata279,
@@ -17,7 +17,15 @@ export const getters = {
         url: 'https://shibataactivestreet.com/',
         org: '名古屋市南区',
         join: 2017,
-        text: '簡単な解説',
+        text: '名古屋市商店街にぎわい創出事業から誕生した商店街活性化プロジェクト.',
+      },
+      {
+        src: shibata279,
+        title: '4letters',
+        url: 'https://shibataactivestreet.com/',
+        org: '個人制作',
+        join: 2019,
+        text: 'null',
       },
     ]
 }
