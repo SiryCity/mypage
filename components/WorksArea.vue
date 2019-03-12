@@ -1,19 +1,22 @@
 <template lang="pug">
   article.works
-    img(:src='works.src')
+    img(:src='works.src || icon')
     div.works__bottom
       h2 {{works.title}}
       h3 {{`${works.org} ${works.join}-`}}
       div {{works.text}}
-      a.anchor(:href='works.url'): img(:src='link')
+      a.anchor(v-if='works.url' :href='works.url'): img(:src='link')
 </template>
 
 <script>
+import icon from '~/assets/icon.svg'
 import link from '~/assets/link.svg'
+
 export default {
   props:['works'],
   computed: {
     link: () => link,
+    icon: () => icon,
   } 
 }
 </script>
@@ -23,7 +26,7 @@ export default {
 .works
   width calc(100% - 32px)
   height 328px
-  margin 16px
+  margin 32px 16px
   overflow hidden
   border-radius 10px
   box-shadow 0 3px 6px #ccc

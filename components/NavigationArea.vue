@@ -31,9 +31,8 @@
   transition-duration .2s
   transition-property margin-right
   pointer-events auto
-  margin-right 10px
+  margin-right 5px
 .links:hover
-  margin-right 20px
 .links--active
-  margin-right 20px
+  margin-right 15px
 </style>

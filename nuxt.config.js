@@ -1,4 +1,12 @@
+require('dotenv').config()
+const {
+  FORMS_API
+} = process.env
+
 module.exports = {
+  modules: [
+    '@nuxtjs/dotenv',
+  ],
   css: ['assets/main.css'],
   /*
   ** Headers of the page
@@ -40,6 +48,9 @@ module.exports = {
     }
   },
 
+  env: {
+    FORMS_API
+  },
   mode: 'spa',
 }
 

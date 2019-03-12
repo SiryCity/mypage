@@ -1,25 +1,32 @@
 <template lang="pug">
   div.main
-    form.form-area(name='contact' method='POST' netlify)
-      p お気軽にどうぞ :)
-      label Name 名前
-      input(type='text' name='name')
-      label Email メールアドレス
-      input(type='email' name='email')
-      label Message 内容
-      textarea(name='message')
-      button(type='submit') Send
+    iframe(
+      :src='apiKey',
+      width='100%',
+      height='100%',
+      frameborder='0',
+      marginheight='0',
+      marginwidth='0'
+    ) 読み込んでいます...
 </template>
 
 <script>
 export default {
+  data(){
+    return{
+      apiKey: null
+    }
+  }, 
+  mounted(){
+    this.apiKey = `https://docs.google.com/forms/d/e/${process.env.FORMS_API}/viewform?embedded=true`
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
 .main
   width 100%
-  min-height calc(100vh - 20px)
+  height calc(var(--static100vh, 100vh) - 20px)
   display flex
   justify-content center
   align-items center
@@ -35,15 +42,6 @@ export default {
   border-radius 10px
   box-shadow 0 3px 6px #ccc
 
-.form-area > label
-.form-area > input
-.form-area > textarea
-  width 100%
-  max-width 360px
-  
-.form-area > label
-.form-area > button
-  margin-top 20px
 </style>
 
 

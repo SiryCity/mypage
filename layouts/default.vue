@@ -57,6 +57,6 @@ body
   height 20px
   text-align center
   font-weight bold
-  color #666
+  color #333
 </style>
 

@@ -1,16 +1,15 @@
 <template lang="pug">
   div.profile-area
-    h3 Web Engineer
-    h3 Web Designer
+    h3 Web Engineer & Web Designer
     h1 大同太郎
     h2 DAIDOOOO Taroo
-    p 2017-19年, 大同大学 情報学研究科にて情報学(JavaScript, Python)を専攻.
-    p 2019年, 在学中に名古屋市南区を拠点にフリーランス活動を開始.
-    p 2019年3月現在, 元気にやってます :)
     div.link-area
       a(href='#'): img(:src='twitter')
       a(href='https://github.com/SiryCity'): img(:src='github')
       a(href='#'): img(:src='link')
+    p 2017-19年, 大同大学 情報学研究科にて情報学(JavaScript, Python)を専攻.
+    p 2019年, 在学中に名古屋市を拠点としてフリーランスエンジニアの活動を開始.
+    p 2019年3月現在, 元気にやってます :)
       
 </template>
 
@@ -42,12 +41,12 @@ export default {
   box-shadow 0 3px 6px #ccc
 
 .profile-area > h3
-  margin 4px 0
+  margin 4px 0 0px
   padding 0
   font-size 16px
 
 .profile-area > h1
-  margin 4px 0 -4px
+  margin 18px 0 -4px
   padding 0
   font-size 42px
   font-weight normal
@@ -56,7 +55,7 @@ export default {
   color #0073c2
 
 .profile-area > h2
-  margin -4px 0 14px
+  margin -4px 0 0
   padding 0
   font-size 16px
   
@@ -68,13 +67,14 @@ export default {
 
 .link-area
   display flex
-  justify-content flex-end
+  justify-content flex-start
   height 28px
+  margin 8px 0 20px
 
 .link-area > a
   width 28px
   height 28px
-  margin 8px -10px 0 12px
+  margin 0 4px 0 0
 
 .link-area > a > img
   width 28px

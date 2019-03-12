@@ -4,12 +4,12 @@ export const getters = {
   works: () =>
     [
       {
-        src: shibata279,
+        src: null,
         title: 'nagoya.js',
-        url: 'https://shibataactivestreet.com/',
+        url: null,
         org: '個人制作',
         join: 2019,
-        text: '大それた名前の技術ブログ.',
+        text: ' もうすぐ作る予定の技術ブログ.',
       },
       {
         src: shibata279,
@@ -20,12 +20,12 @@ export const getters = {
         text: '名古屋市商店街にぎわい創出事業から誕生した商店街活性化プロジェクト.',
       },
       {
-        src: shibata279,
+        src: null,
         title: '4letters',
-        url: 'https://shibataactivestreet.com/',
+        url: null,
         org: '個人制作',
         join: 2019,
-        text: 'null',
+        text: 'もうすぐ作る予定のアプリ',
       },
     ]
 }
