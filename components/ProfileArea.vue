@@ -6,7 +6,7 @@
     h2 DAIDOOOO Taroo
     p 2017-19年, 大同大学 情報学研究科にて情報学(JavaScript, Python)を専攻.
     p 2019年, 在学中に名古屋市南区を拠点にフリーランス活動を開始.
-    p 2019年3月現在, 元気にやってます.
+    p 2019年3月現在, 元気にやってます :)
     div.link-area
       a(href='#'): img(:src='twitter')
       a(href='https://github.com/SiryCity'): img(:src='github')
@@ -52,11 +52,14 @@ export default {
   font-size 42px
   font-weight normal
 
+.profile-area > h1:first-letter
+  color #0073c2
+
 .profile-area > h2
   margin -4px 0 14px
   padding 0
   font-size 16px
-
+  
 .profile-area > p
   display block
   word-wrap break-word
@@ -66,12 +69,12 @@ export default {
 .link-area
   display flex
   justify-content flex-end
-  height 0
+  height 28px
 
 .link-area > a
   width 28px
   height 28px
-  margin 0 -10px 0 12px
+  margin 8px -10px 0 12px
 
 .link-area > a > img
   width 28px

@@ -22,7 +22,6 @@ export default {
 <style lang="stylus" scoped>
 .works
   width calc(100% - 32px)
-  max-width calc(360px - 32px)
   height 328px
   margin 16px
   overflow hidden

@@ -1,0 +1,7 @@
+.page-enter-active, .page-enter-active{
+  transition: all .2s;
+}
+
+.page-enter, .page-eave-active{
+  opacity: 0;
+}
