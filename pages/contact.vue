@@ -1,13 +1,13 @@
 <template lang="pug">
   div.main
-    form.form-area(name='contact', method='POST', netlify)
+    form.form-area(name='contact' method='POST' netlify)
       p お気軽にどうぞ :)
       label Name 名前
-        input(type='text', name='name')
+      input(type='text' name='name')
       label Email メールアドレス
-        input(type='email', name='email')
+      input(type='email' name='email')
       label Message 内容
-        textarea(name='message')
+      textarea(name='message')
       button(type='submit') Send
 </template>
 
@@ -20,17 +20,30 @@ export default {
 .main
   width 100%
   min-height calc(100vh - 20px)
+  display flex
+  justify-content center
+  align-items center
 
 .form-area
   width calc(100% - 64px)
-  height 296px
   margin 16px
   padding 16px
   display flex
   flex-direction column
   justify-content center
+  align-items center
   border-radius 10px
   box-shadow 0 3px 6px #ccc
+
+.form-area > label
+.form-area > input
+.form-area > textarea
+  width 100%
+  max-width 360px
+  
+.form-area > label
+.form-area > button
+  margin-top 20px
 </style>
 
 

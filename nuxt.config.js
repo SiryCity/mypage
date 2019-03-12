@@ -1,13 +1,5 @@
 module.exports = {
   css: ['assets/main.css'],
-  modules: [
-    '@nuxtjs/markdownit'
-  ],
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-  },
   /*
   ** Headers of the page
   */
