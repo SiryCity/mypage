@@ -1,16 +1,16 @@
 <template lang="pug">
   div.main
+    icon-area
     profile-area
-    news-area
 </template>
 
 <script>
-import NewsArea from '~/components/NewsArea.vue'
+import IconArea from '~/components/IconArea.vue'
 import ProfileArea from '~/components/ProfileArea.vue'
 
 export default {
   components: {
-    NewsArea,
+    IconArea,
     ProfileArea
   },
 }
@@ -19,7 +19,7 @@ export default {
 <style lang="stylus" scoped>
 .main
   width 100%
-  height calc(var(--static100vh, 100vh) - 20px)
+  min-height calc(100vh - 20px)
   display flex
   flex-wrap wrap
   justify-content center

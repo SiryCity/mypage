@@ -1,19 +1,17 @@
 <template lang="pug">
   div.profile-area
-    div.profile-area__top
-      h2 Web Engineer
-      h1 大同 太郎
-      h3 DAIDOOOO Taroo
-    div.profile-area__bottom
-      div.profile-area__bottom__side
-        a.anchor(href='#'): img(:src='link')
-        a.anchor(href='#'): img(:src='twitter')
-        a.anchor(href='https://github.com/SiryCity'): img(:src='github')
-      div.profile-area__bottom__side
-        h4 JavaScript
-        h4 Python
-        h5 HTML
-        h5 CSS
+    h3 Web Engineer
+    h3 Web Designer
+    h1 大同太郎
+    h2 DAIDOOOO Taroo
+    p 2017-19年, 大同大学 情報学研究科にて情報学(JavaScript, Python)を専攻.
+    p 2019年, 在学中に名古屋市南区を拠点にフリーランス活動を開始.
+    p 2019年3月現在, 元気にやってます.
+    div.link-area
+      a(href='#'): img(:src='twitter')
+      a(href='https://github.com/SiryCity'): img(:src='github')
+      a(href='#'): img(:src='link')
+      
 </template>
 
 <script>
@@ -32,59 +30,50 @@ export default {
 
 <style lang="stylus" scoped>
 .profile-area
-  width calc(100% - 32px)
-  max-width calc(360px - 32px)
-  height 328px
+  width calc(100% - 64px)
+  max-width calc(360px - 64px)
+  height 296px
   margin 16px
-  display flex
-  flex-wrap wrap
-  writing-mode vertical-rl
-  white-space nowrap
-  border-radius 10px
-  box-shadow 0 3px 6px #ccc
-.profile-area__top
-  width 100%
-  height 50%
+  padding 16px
   display flex
   flex-direction column
   justify-content center
+  border-radius 10px
+  box-shadow 0 3px 6px #ccc
 
-.profile-area__bottom
-  width 100%
-  height 50%
-  display flex
-  flex-direction column
-  justify-content space-between
+.profile-area > h3
+  margin 4px 0
+  padding 0
+  font-size 16px
 
-.profile-area__top > h1
-  font-size 48px
-  margin 13px 0 0 0
+.profile-area > h1
+  margin 4px 0 -4px
+  padding 0
+  font-size 42px
   font-weight normal
-.profile-area__top > h2
-  font-size 17px
-  margin 20px 0 0 8px
-.profile-area__top > h3
-  font-size 16px
-  margin 20px 0 0 0
 
-.profile-area__bottom__side
+.profile-area > h2
+  margin -4px 0 14px
+  padding 0
+  font-size 16px
+
+.profile-area > p
+  display block
+  word-wrap break-word
+  padding 0
+  margin 0
+
+.link-area
   display flex
-  flex-direction column
-  align-items flex-end
-  margin 4px
+  justify-content flex-end
+  height 0
 
-.profile-area__bottom__side > h4
-.profile-area__bottom__side > h5
-  color #999
-  font-size 16px
-  margin 1px 2px
-
-.anchor
+.link-area > a
   width 28px
   height 28px
-  margin 2px
+  margin 0 -10px 0 12px
 
-.anchor > img
+.link-area > a > img
   width 28px
   height 28px
 </style>
