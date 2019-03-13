@@ -3,11 +3,8 @@
 </template>
 
 <script>
-import icon from '~/assets/icon.svg'
 export default {
-  computed: {
-    icon: () => icon,
-  } 
+  props: ['icon']
 }
 </script>
 
