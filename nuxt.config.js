@@ -1,7 +1,4 @@
 require('dotenv').config()
-const {
-  FORMS_API
-} = process.env
 
 module.exports = {
   modules: [
@@ -49,7 +46,7 @@ module.exports = {
   },
 
   env: {
-    FORMS_API
+    FORMS_API: process.env.FORMS_API
   },
   mode: 'spa',
 }
