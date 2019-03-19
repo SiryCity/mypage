@@ -12,14 +12,11 @@
 
 <script>
 export default {
-  data(){
+  asyncData(process){
     return{
-      apiKey: null
+      apiKey:`https://docs.google.com/forms/d/e/${process.env.FORMS_API}/viewform?embedded=true`
     }
-  }, 
-  mounted(){
-    this.apiKey = `https://docs.google.com/forms/d/e/${process.env.FORMS_API}/viewform?embedded=true`
-  }
+  },
 }
 </script>
 
