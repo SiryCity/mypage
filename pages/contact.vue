@@ -12,10 +12,9 @@
 
 <script>
 export default {
-  asyncData(){
-    console.log(process.env)
+  asyncData(context){
+    console.log(context.env.FORMS_API)
     console.log(process.env.FORMS_API)
-    console.log(process.client)
     return{
       apiKey:`https://docs.google.com/forms/d/e/${process.env.FORMS_API}/viewform?embedded=true`
     }
