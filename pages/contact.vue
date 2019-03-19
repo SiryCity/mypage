@@ -1,7 +1,7 @@
 <template lang="pug">
   div.main
     iframe(
-      :src='apiKey',
+      :src='`https://docs.google.com/forms/d/e/${apiKey}/viewform?embedded=true`',
       width='100%',
       height='100%',
       frameborder='0',
@@ -12,11 +12,9 @@
 
 <script>
 export default {
-  asyncData(context){
-    console.log(context.env.FORMS_API)
-    console.log(process.env.FORMS_API)
+  data(){
     return{
-      apiKey:`https://docs.google.com/forms/d/e/${process.env.FORMS_API}/viewform?embedded=true`
+      apiKey: process.env.FORMS_API
     }
   },
 }
