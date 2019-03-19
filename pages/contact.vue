@@ -12,9 +12,9 @@
 
 <script>
 export default {
-  asyncData(process){
+  asyncData(context){
     return{
-      apiKey:`https://docs.google.com/forms/d/e/${process.env.FORMS_API}/viewform?embedded=true`
+      apiKey:`https://docs.google.com/forms/d/e/${process.env.FORMS_API || context.FORMS_API}/viewform?embedded=true`
     }
   },
 }
