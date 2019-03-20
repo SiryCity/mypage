@@ -14,9 +14,9 @@
 export default {
   asyncData(context){
     console.dir(context)
-    console.dir(FORMS_API)
+    console.dir(context.env.FORMS_API)
     return{
-      apiKey:`https://docs.google.com/forms/d/e/${process.env.FORMS_API || FORMS_API}/viewform?embedded=true`
+      apiKey:`https://docs.google.com/forms/d/e/${context.env.FORMS_API}/viewform?embedded=true`
     }
   },
 }
