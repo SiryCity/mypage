@@ -17,7 +17,7 @@
         WebアプリケーションやPRサイトの制作, 業務効率化システムの開発など... 
         活動で得た知見は各所で発信しています.
       div.link-area
-        a(href='#'): img(:src='twitter')
+        a(href='https://twitter.com/sirycity'): img(:src='twitter')
         a(href='https://github.com/SiryCity'): img(:src='github')
         a(href='#'): img(:src='link')
     icon-area(:icon='nagoya')
@@ -63,6 +63,7 @@ export default {
 .main
   width 100%
   min-height calc(100vh - 20px)
+  padding-top 200px
   display flex
   flex-wrap wrap
   justify-content center
