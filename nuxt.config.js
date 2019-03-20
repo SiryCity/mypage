@@ -1,4 +1,8 @@
+
 module.exports = {
+  modules: [
+    '@nuxtjs/dotenv',
+  ],
   css: ['assets/main.css'],
   /*
   ** Headers of the page
