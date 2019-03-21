@@ -29,11 +29,11 @@ export const getters = {
       },
       {
         src: null,
-        title: '4-letters',
+        title: '4文字予定',
         url: null,
         org: '個人制作',
         join: 2019,
-        text: 'もうすぐ作る予定のアプリ',
+        text: 'シンプルな予定表アプリ.4月公開予定.',
       },
     ]
 }
