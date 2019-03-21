@@ -42,7 +42,9 @@ module.exports = {
   },
 
   env: {
-    FORMS_API: process.env.FORMS_API
+    FORMS_API: (process.env.NODE_ENV === 'development')
+    ? process.env.FORMS_API
+    : process.env.FORMS_API
   },
   mode: 'spa',
 }
