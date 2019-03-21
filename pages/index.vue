@@ -3,8 +3,8 @@
     icon-area(:icon='icon')
     profile-area
       h3 Web Engineer & Web Designer
-      h1 大同太郎
-      h2 DAIDOOOO Taroo
+      h1 水谷竜斗
+      h2 MIZUTANI Ryuto
       p 1994.11.15 (24)
       p.
         2017-19年、大同大学 大学院 情報学研究科にてWebエンジニアリングを専攻。
@@ -19,7 +19,6 @@
       div.link-area
         nuxt-link(to='https://twitter.com/sirycity'): img(:src='twitter')
         nuxt-link(to='https://github.com/SiryCity'): img(:src='github')
-        nuxt-link(to='https://notice-js.com'): img(:src='link')
     icon-area(:icon='photo')
     profile-area
       h4 I ♥ challenging

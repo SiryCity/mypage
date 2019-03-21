@@ -3,7 +3,7 @@
     div#root__wrapper
       nuxt
     navigation-area
-    footer#footer &copy; 2019 DAIDO Taro
+    footer#footer &copy; 2019 MIZUTANI Ryuto
 </template>
 
 <script>
