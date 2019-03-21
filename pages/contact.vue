@@ -1,13 +1,14 @@
 <template lang="pug">
   div.main
-    iframe(
+    iframe.form-area(
       :src='apiKey',
       width='100%',
       height='100%',
       frameborder='0',
       marginheight='0',
       marginwidth='0'
-    ) 読み込んでいます...
+    )
+    p loading now ...
 </template>
 
 <script>
@@ -27,17 +28,23 @@ export default {
   display flex
   justify-content center
   align-items center
+  position relative
+    p
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      margin auto
+      font-weight bold
 
 .form-area
-  width calc(100% - 64px)
-  margin 16px
-  padding 16px
-  display flex
-  flex-direction column
-  justify-content center
-  align-items center
-  border-radius 10px
-  box-shadow 0 3px 6px #ccc
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  margin auto
 
 </style>
 

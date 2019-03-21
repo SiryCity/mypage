@@ -9,7 +9,7 @@
       p.
         2017-19年, 大同大学 大学院 情報学研究科にてWebエンジニアリングを専攻. 
         2019年, 在学中にフリーランスエンジニアとして活動を開始. 
-    icon-area(:icon='photo')
+    icon-area(:icon='js')
     profile-area
       h4 I ♥ JavaScript
       p.
@@ -17,16 +17,23 @@
         WebアプリケーションやPRサイトの制作, 業務効率化システムの開発など... 
         活動で得た知見は各所で発信しています.
       div.link-area
-        a(href='https://twitter.com/sirycity'): img(:src='twitter')
-        a(href='https://github.com/SiryCity'): img(:src='github')
-        a(href='#'): img(:src='link')
+        nuxt-link(to='https://twitter.com/sirycity'): img(:src='twitter')
+        nuxt-link(to='https://github.com/SiryCity'): img(:src='github')
+        nuxt-link(to='https://notice-js.com'): img(:src='link')
+    icon-area(:icon='photo')
+    profile-area
+      h4 I ♥ challenging
+      p.
+        積極的な活動と斬新なアイデアは中小規模の団体や学生の武器だと考えています. 
+        Webコンテンツに興味はあるけどお金が... なんて方がいたら, 
+      nuxt-link(to='/contact') お話を聞かせてください :)
     icon-area(:icon='nagoya')
     profile-area
       h4 I ♥ Nagoya
       p.
-        Web不毛の地名古屋を拠点に今日も奮闘しています. 
-        本格的に活動を初めてからは, 中小規模の団体や学生様からよくお話を頂きます. 
-        Webコンテンツに興味はあるけどお金が... なんて方がいたら, 
+        生まれ育った名古屋を拠点に活動しています. 
+        名古屋は重工業の街ですが,だからこそITの可能性が溢れていると考えています!
+        ITを活用したビジネスをお考えの方も,
       nuxt-link(to='/contact') お話を聞かせてください :)
     
         
@@ -38,6 +45,7 @@ import ProfileArea from '~/components/ProfileArea.vue'
 
 import icon from '~/assets/icon.svg'
 import photo from '~/assets/photo.svg'
+import js from '~/assets/js.svg'
   import link from '~/assets/link.svg'
   import twitter from '~/assets/twitter.svg'
   import github from '~/assets/github.svg'
@@ -51,6 +59,7 @@ export default {
   computed: {
     icon: () => icon,
     photo: () => photo,
+    js: () => js,
       link: () => link,
       twitter: () => twitter,
       github: () => github,

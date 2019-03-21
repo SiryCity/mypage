@@ -6,7 +6,7 @@ export const getters = {
       {
         src: null,
         title: 'JavaScriptに関するお知らせ',
-        url: null,
+        url: 'https://notice-js.com/',
         org: '個人制作',
         join: 2019,
         text: 'JavaScriptを中心とした技術ブログ.',
