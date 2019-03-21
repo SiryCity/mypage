@@ -1,6 +1,6 @@
 <template lang="pug">
   article.works
-    img(:src='works.src || icon')
+    img(:src='works.src || noimage')
     div.works__bottom
       h2 {{works.title}}
       h3 {{`${works.org} ${works.join}-`}}
@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import icon from '~/assets/icon.svg'
+import noimage from '~/assets/noimage.svg'
 import link from '~/assets/link.svg'
 
 export default {
   props:['works'],
   computed: {
     link: () => link,
-    icon: () => icon,
+    noimage: () => noimage,
   } 
 }
 </script>
