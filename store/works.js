@@ -9,7 +9,7 @@ export const getters = {
         url: 'https://notice-js.com/',
         org: '個人制作',
         join: 2019,
-        text: 'JavaScriptを中心とした技術ブログ.',
+        text: 'JavaScriptを中心とした技術ブログ。',
       },
       {
         src: shibata279,
@@ -17,7 +17,7 @@ export const getters = {
         url: 'https://shibataactivestreet.com/',
         org: '名古屋市南区様',
         join: 2017,
-        text: '名古屋市商店街にぎわい創出事業から誕生した商店街活性化プロジェクト.',
+        text: '名古屋市商店街にぎわい創出事業から誕生した商店街活性化プロジェクト。',
       },
       {
         src: null,
@@ -25,15 +25,15 @@ export const getters = {
         url: null,
         org: '匿名希望様',
         join: 2018,
-        text: '既存のネットショップと社内データベースの統合と自動化.',
+        text: '既存のネットショップと社内データベースの統合と自動化。',
       },
       {
         src: null,
-        title: '4文字予定',
+        title: '四文字予定',
         url: null,
         org: '個人制作',
         join: 2019,
-        text: 'シンプルな予定表アプリ.4月公開予定.',
+        text: 'シンプルな予定表アプリ。4月公開予定!',
       },
     ]
 }

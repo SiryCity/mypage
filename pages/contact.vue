@@ -29,14 +29,9 @@ export default {
   justify-content center
   align-items center
   position relative
-    p
-      position absolute
-      top 0
-      bottom 0
-      left 0
-      right 0
-      margin auto
-      font-weight bold
+  >>> p
+    font-weight bold
+    font-size 22px
 
 .form-area
   position absolute
