@@ -24,18 +24,18 @@
     profile-area
       h4 I ♥ challenging
       p.
-        ご依頼の相手は中小規模の団体や学生が殆ど、
-        少ない予算で大きな夢を語ってくれます。
-        斬新なWebコンテンツにチャレンジしたい方、 
-      nuxt-link(to='/contact') お話を聞かせてください :)
+        ご依頼の相手は中小規模の団体や学生が殆ど。
+        どなたも斬新なWebコンテンツを考案し、成功に向けて精力的に活動されています。
+        少ない予算で大きな夢をお持ちの方、
+      nuxt-link.link-box(to='/contact') ご連絡お待ちしております :)
     icon-area(:icon='nagoya')
     profile-area
       h4 I ♥ Nagoya
       p.
-        生まれ育った名古屋を拠点に活動しています。 
+        私自身が生まれ育った名古屋を拠点に活動しています。 
         名古屋は重工業の街ですが、だからこそITの可能性が溢れていると感じます。
         RPA(業務効率化)に関するWebシステムをお考えの方も、
-      nuxt-link(to='/contact') お話を聞かせてください :)
+      nuxt-link.link-box(to='/contact') お話を聞かせてください :)
     
         
 </template>
@@ -79,6 +79,12 @@ export default {
   justify-content center
   align-items center
   align-content center
+
+.link-box
+  width 100%
+  text-decoration none
+  &:hover
+    text-decoration underline
 </style>
 
 
