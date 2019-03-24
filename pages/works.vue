@@ -10,6 +10,11 @@
 <script>
 import WorksArea from '~/components/WorksArea.vue'
 export default {
+  head () {
+    return {
+      title: '制作物一覧',
+    }
+  },
   components: {
     WorksArea
   }
