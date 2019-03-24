@@ -52,12 +52,11 @@ import js from '~/assets/js.svg'
 import nagoya from '~/assets/nagoya.svg'
 
 export default {
-  head () {
-    return {
+  head: () => 
+    ({
       titleTemplate: null,
       title: '水谷竜斗 | Webエンジニア',
-    }
-  },
+    }),
   components: {
     IconArea,
     ProfileArea
