@@ -9,7 +9,7 @@ export const getters = {
         url: '',//'https://notice-js.com/',
         org: '個人制作',
         join: 2019,
-        text: 'JavaScriptを中心とした技術ブログ。3/25(月)公開。',
+        text: 'JavaScriptを中心とした技術ブログ。3月中公開。',
       },
       {
         src: shibata279,
