@@ -1,15 +1,16 @@
 import shibata279 from '~/assets/works/shibata279.jpg'
+import jsnotice from '~/assets/works/jsnotice.svg'
 
 export const getters = {
   works: () =>
     [
       {
-        src: null,
+        src: jsnotice,
         title: 'JavaScriptに関するお知らせ',
-        url: '',//'https://notice-js.com/',
+        url: 'https://jsnotice.com/',
         org: '個人制作',
         join: 2019,
-        text: 'JavaScriptを中心とした技術ブログ。3月中公開。',
+        text: 'JavaScriptを中心とした技術ブログ。',
       },
       {
         src: shibata279,
