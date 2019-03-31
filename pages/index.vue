@@ -19,6 +19,7 @@
       div.link-area
         nuxt-link(to='https://twitter.com/sirycity'): img(:src='twitter')
         nuxt-link(to='https://github.com/SiryCity'): img(:src='github')
+        nuxt-link(to='https://jsnotice.com'): img(:src='icon')
     icon-area(:icon='photo')
     profile-area
       h4 I ♥ challenging
