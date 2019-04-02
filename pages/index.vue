@@ -17,9 +17,9 @@
         WebアプリケーションやPRサイトの制作、業務効率化システムの開発など... 
         活動で得た知見は各所で発信しています。
       div.link-area
-        nuxt-link(to='https://twitter.com/sirycity'): img(:src='twitter')
-        nuxt-link(to='https://github.com/SiryCity'): img(:src='github')
-        nuxt-link(to='https://jsnotice.com'): img(:src='icon')
+        a(href='https://twitter.com/sirycity'): img(:src='twitter')
+        a(href='https://github.com/SiryCity'): img(:src='github')
+        a(href='https://jsnotice.com'): img(:src='icon')
     icon-area(:icon='photo')
     profile-area
       h4 I ♥ challenging
