@@ -2,6 +2,12 @@
 module.exports = {
   modules: [
     '@nuxtjs/dotenv',
+    /*[
+      '@nuxtjs/google-analytics',
+      {
+        id: process.env.GA_ID
+      }
+    ]*/
   ],
   css: ['assets/main.css'],
   /*
@@ -50,7 +56,10 @@ module.exports = {
   env: {
     FORMS_API: (process.env.NODE_ENV === 'development')
     ? process.env.FORMS_API
-    : process.env.FORMS_API
+    : process.env.FORMS_API,
+    GA_ID: (process.env.NODE_ENV === 'development')
+    ? process.env.GA_ID
+    : process.env.GA_ID,
   },
   mode: 'universal',
 }

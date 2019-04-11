@@ -1,5 +1,7 @@
 import shibata279 from '~/assets/works/shibata279.jpg'
 import jsnotice from '~/assets/works/jsnotice.svg'
+import FourLetters from '~/assets/works/4-letters.svg'
+
 
 export const getters = {
   works: () =>
@@ -29,12 +31,20 @@ export const getters = {
         text: '既存のネットショップと社内データベースの統合と自動化。',
       },
       {
-        src: null,
+        src: FourLetters,
         title: '四文字予定',
+        url: 'https://only-four.com',
+        org: '個人制作',
+        join: 2019,
+        text: '「予定は・四文字・要を得て」四文字しか書けない超シンプル予定表。',
+      },
+      {
+        src: null,
+        title: 'Webアプリ(仮)',
         url: null,
         org: '個人制作',
         join: 2019,
-        text: 'シンプルな予定表アプリ。4月公開予定!',
+        text: '1か月1アプリを目指して随意制作中!!!',
       },
     ]
 }
