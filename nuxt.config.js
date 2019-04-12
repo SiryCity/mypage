@@ -2,12 +2,14 @@
 module.exports = {
   modules: [
     '@nuxtjs/dotenv',
-    /*[
+    [
       '@nuxtjs/google-analytics',
       {
-        id: process.env.GA_ID
+        id: (process.env.NODE_ENV === 'development')
+        ? process.env.GA_ID
+        : process.env.GA_ID,
       }
-    ]*/
+    ]
   ],
   css: ['assets/main.css'],
   /*
