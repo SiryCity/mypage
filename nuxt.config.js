@@ -2,6 +2,7 @@
 module.exports = {
   modules: [
     '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap',
     [
       '@nuxtjs/google-analytics',
       {
@@ -11,6 +12,12 @@ module.exports = {
       }
     ]
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://rm-js.com',
+    cacheTime: 1000 * 60 * 15,
+    generate: true,
+  },
   css: ['assets/main.css'],
   /*
   ** Headers of the page
