@@ -13,10 +13,10 @@ module.exports = {
     ]
   ],
   sitemap: {
-    path: 'dist/sitemap.xml',
+    path: 'sitemap.xml',
     hostname: 'https://rm-js.com',
     cacheTime: 1000 * 60 * 15,
-    generate: true,
+    generate: false,
   },
   css: ['assets/main.css'],
   /*
