@@ -12,3 +12,7 @@ dist
 
 .env
 _redirects
+
+
+app.yaml
+secret.yaml
