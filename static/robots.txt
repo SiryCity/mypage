@@ -1,1 +1,4 @@
 User-Agent:*
+Disallow:
+
+Sitemap: https://jsnotice.com/sitemap.xml
