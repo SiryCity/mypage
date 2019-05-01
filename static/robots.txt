@@ -1,4 +1,4 @@
 User-Agent:*
 Disallow:
 
-Sitemap: https://jsnotice.com/sitemap.xml
+Sitemap: https://rm-js.com/sitemap.xml
